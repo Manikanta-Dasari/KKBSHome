@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.3.11/tiny-slider.css">
+    <style type="text/css">
+        body {
+            background: #333;
+            color: white;
+        }
+
+        .slider-container {
+            max-width: 1000px;
+            padding: 2rem 3rem;
+            background: #e6e6e6;
+            margin: 2rem auto 0 auto;
+            overflow: hidden;
+            border-radius: 5px;
+            position: relative;
+        }
+
+
+
+
+        img {
+            display: inline-block;
+            vertical-align: top;
+            max-width: 100%;
+        }
+
+        .my-slider {
+            position: relative;
+        }
+
+        .slider-item {
+            background: grey;
+            border-right: 2px solid #333;
+            padding: 1.5rem .75rem;
+            position: relative;
+        }
+
+
+            .slider-item:hover {
+                cursor: pointer;
+            }
+
+
+
+        .controls {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+            left: 0;
+            background: #333;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+            .controls:focus {
+                outline: none;
+            }
+
+        li:hover {
+            cursor: pointer;
+        }
+
+
+
+        .card {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 200px;
+            color: #333;
+            background: white;
+            border-radius: 5px;
+            padding-bottom: .75rem;
+            font-family: sans-serif;
+            overflow: hidden;
+            box-shadow: 2px 2px rgba(black, .3);
+            position: relative;
+        }
+
+
+        img {
+            margin-bottom: .25rem;
+        }
+
+        h2 {
+            margin: 0 0 .25rem;
+        }
+
+        p {
+            margin: 0;
+            padding: 0 .5rem;
+        }
+    </style>
+    <script>
+        window.console = window.console || function (t) { };
+    </script>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+
+
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.3.11/min/tiny-slider.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+    <script id="rendered-js">
+        const slider = tns({
+            container: '.my-slider',
+            loop: true,
+            items: 1,
+            slideBy: 'page',
+            nav: false,
+            autoplay: true,
+            speed: 400,
+            autoplayButtonOutput: false,
+            mouseDrag: true,
+            lazyload: true,
+            controlsContainer: "#customize-controls",
+            responsive: {
+                640: {
+                    items: 2
+                },
+
+
+                768: {
+                    items: 3
+                }
+            }
+        });
+//# sourceURL=pen.js
+    </script>
+</head>
+<body>
+    <h1> Tiny slider example</h1>
+    <div class="slider-container">
+        <ul class="controls" id="customize-controls" aria-label="Carousel Navigation" tabindex="0">
+            <li class="prev" data-controls="prev" aria-controls="customize" tabindex="-1">
+                <i class="fas fa-angle-left fa-5x"></i>
+            </li>
+            <li class="next" data-controls="next" aria-controls="customize" tabindex="-1">
+                <i class="fas fa-angle-right fa-5x"></i>
+            </li>
+        </ul>
+        <div class="my-slider">
+            <div class="slider-item">
+                <div class="card">
+                    <img src="https://placeimg.com/200/150/any" alt="">
+                    <h2>Title 1</h2>
+                    <p class="card_description">Loresm ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptas!</p>
+                </div>
+            </div>
+
+            <div class="slider-item">
+                <div class="card">
+                    <img src="https://placeimg.com/200/150/nature" alt="">
+                    <h2>Title 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptas!</p>
+                </div>
+            </div>
+
+            <div class="slider-item">
+                <div class="card">
+                    <img src="https://placeimg.com/200/150/nature/2" alt="">
+                    <h2>Title 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptas!</p>
+                </div>
+            </div>
+            <div class="slider-item">
+                <div class="card">
+                    <img src="https://placeimg.com/200/150/nature/3" alt="">
+                    <h2>Title 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptas!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

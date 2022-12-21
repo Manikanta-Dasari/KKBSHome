@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <title>Responsive Navigation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="Assets/Nav/CSS/normalize.min.css">
+    <link rel="stylesheet" href="Assets/Nav/CSS/defaults.min.css">
+    <link rel="stylesheet" href="Assets/Nav/CSS/nav-core.min.css">
+    <link rel="stylesheet" href="Assets/Nav/CSS/nav-layout.min.css">
+
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="css/ie8-core.min.css">
+    <link rel="stylesheet" href="css/ie8-layout.min.css">
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <script src="Assets/Nav/JS/rem.min.js"></script>
+    <!--<style type="text/css">
+        @media screen and (max-width: 600px) {
+            .nav a:not(:first-child) {
+                display: none;
+            }
+
+            
+        }
+    </style>-->
+    <!--<style type="text/css">
+        .logo {
+            margin-left: 5%;
+            color: #ffffff;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .logo_header {
+            display: flex;
+            margin-left: 5px;
+            width: 30%;
+        }
+        @media only screen and (max-width : 992px) {
+            .logo_header {
+                width: 100%;
+                justify-content: space-between;
+                margin-right: 2%;
+            }
+        }
+    </style>-->
+</head>
+<body>
+    <!--<div style="height: 100px; padding-top: 10px; padding-bottom: 10px; background-color: #0F2F57;">-->
+    <!--<div style="float:left;">-->
+    <a href="#" class="nav-button">Menu</a>
+    <nav class="nav" style="height: 100px; padding-top: 10px; padding-bottom: 10px; background-color: #0F2F57;">
+
+        
+            <a href="#" class="logo">
+                <img alt="KKBS" src="Assets/Images/Logo/site_logo.png" />
+
+            </a>
+            
+            <ul>
+                <li>
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                            <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="#">About</a></li>
+                <li class="nav-submenu">
+                    <a href="#">Services</a>
+                    <ul>
+                        <li><a href="#">Some Service</a></li>
+                        <li><a href="#">Another Service</a></li>
+                        <li><a href="#">Good Service</a></li>
+                        <li><a href="#">Room Service</a></li>
+                    </ul>
+                </li>
+                <li class="nav-submenu">
+                    <a href="#">Products</a>
+                    <ul>
+                        <li><a href="#">Food</a></li>
+                        <li class="nav-submenu">
+                            <a href="#">Drinks</a>
+                            <ul>
+                                <li><a href="#">Water</a></li>
+                                <li class="nav-submenu">
+                                    <a href="#">Cola</a>
+                                    <ul>
+                                        <li class="nav-submenu nav-left">
+                                            <a href="#">Coca Cola</a>
+                                            <ul>
+                                                <li><a href="#">This one goes left!</a></li>
+                                                <li><a href="#">Too much sugar...</a></li>
+                                                <li><a href="#">Yummy</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Pepsi</a></li>
+                                        <li><a href="#">River</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Lemonade</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Candy</a></li>
+                        <li><a href="#">Ice Cream</a></li>
+                    </ul>
+                </li>
+                <li class="nav-submenu">
+                    <a href="#">Albums</a>
+                    <ul>
+                        <li><a href="#">Christmas</a></li>
+                        <li><a href="#">New Year</a></li>
+                        <li><a href="#">Easter</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+
+
+                <li>
+
+                    <a href="#">
+                        <img alt="gov.bn" src="Assets/Images/govbn-logo.png" />
+                    </a>
+                </li>
+            </ul>
+</nav>
+    <a href="#" class="nav-close">Close Menu</a>
+
+    <!--</div>-->
+    <!--</div>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script src="Assets/Nav/JS/nav.jquery.min.js"></script>
+    <script>
+        $('.nav').nav();
+    </script>
+</body>
+</html>

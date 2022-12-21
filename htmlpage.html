@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKBS Homepage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/82f797382f.js" crossorigin="anonymous"></script>
+
+    
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="Assets/JS/skdslider.min.js"></script>
+    <link href="Assets/CSS/skdslider.css" rel="stylesheet">
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('#demo1').skdslider({
+                slideSelector: '.slide',
+                delay: 5000,
+                animationSpeed: 2000,
+                showNextPrev: true,
+                showPlayButton: true,
+                autoSlide: true,
+                animationType: 'fading'
+            });
+
+
+        });
+    </script>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .demo-code {
+            background-color: #ffffff;
+            border: 1px solid #333333;
+            display: block;
+            padding: 10px;
+        }
+
+        .option-table td {
+            border-bottom: 1px solid #eeeeee;
+        }
+    </style>
+    <link href="Menu.css" rel="stylesheet" />
+
+</head>
+<body>
+    <nav class="navbar">
+
+        <div class="logo_header">
+            <a href="#" class="logo">
+                <img alt="KKBS" src="Assets/Images/Logo/site_logo.png" />
+
+            </a>
+
+            <button class="navbar_toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+
+        <ul class="main_nav">
+            <li>
+                <a href="#" class="nav_links">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+                    </svg>
+                    </a>
+            </li>
+            <li>
+                <a href="#" class="nav_links">Mengenai Kementerian</a>
+            </li>
+            <li>
+                <a href="#" class="nav_links">Hari Kebangsaan</a>
+            </li>
+            <li>
+                <a href="#" class="nav_links">Dasar - Dasar</a>
+            </li>
+            <li>
+                <a href="#" class="nav_links">Perkhidmatan</a>
+            </li>
+            <li>
+                <a href="#" class="nav_links">Hubungi Kami</a>
+            </li>
+            <!--<li>
+                <a href="#" class="nav_links">
+                    <img alt="gov.bn" src="Assets/Images/govbn-logo.png" />
+                </a>
+            </li>-->
+        </ul>
+
+
+        <a href="#" class="nav_links">
+            <img alt="gov.bn" src="Assets/Images/govbn-logo.png" />
+        </a>
+
+    </nav>
+
+    <div style="border: 2px solid #eba832; "></div>
+    <!--Image slider-->
+
+
+    <div id="demo1" style="height:300px;">
+        <div class="slide">
+            <img src="Assets/Images/SliderImages/Slides/1.jpg" />
+            <!--Slider Description example-->
+            <div class="slide-desc">
+                <h2>Slider Title 1</h2>
+                <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="Assets/Images/SliderImages/Slides/2.jpg" />
+            <div class="slide-desc">
+                <h2>Slider Title 2</h2>
+                <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="Assets/Images/SliderImages/Slides/3.jpeg" />
+            <!--NO Description Here-->
+        </div>
+        <div class="slide">
+            <img src="Assets/Images/SliderImages/Slides/4.jpg" />
+            <div class="slide-desc">
+                <h2>Slider Title 4</h2>
+                <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="Assets/Images/SliderImages/Slides/5.jpg" />
+        </div>
+        <div class="slide">
+            <img src="Assets/Images/SliderImages/Slides/6.jpg" />
+            <div class="slide-desc">
+                <h2>Slider Title 6</h2>
+                <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!--End-->
+    <script src="app.js"></script>
+
+</body>
+</html>

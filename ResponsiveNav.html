@@ -1,0 +1,1137 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <title> Responsive Drop Down Navigation Menu | CodingLab </title>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+
+
+    <link rel="stylesheet" href="Assets/ResponsiveNavAssests/style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Image Slider-->
+
+    <script src="Assets/JS/skdslider.min.js"></script>
+    <link href="Assets/CSS/skdslider.css" rel="stylesheet">
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('#demo1').skdslider({
+                slideSelector: '.slide',
+                delay: 5000,
+                animationSpeed: 2000,
+                showNextPrev: true,
+                showPlayButton: true,
+                autoSlide: true,
+                animationType: 'fading'
+            });
+
+
+        });
+    </script>
+    <!--End Image Slider-->
+    <!--Pautan Serega-->
+
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href="Assets/PautanSerega/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="Assets/PautanSerega/jquery.rcbrand.js"></script>
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/darkly/bootstrap.min.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--End Pautan Serega-->
+    <!--Berita-->
+    <script type="text/javascript" src="Assets/ResponsiveNavAssests/jquery.bootstrap.newsbox.min.js"></script>
+    <!--End Berita-->
+    <!--Sector Sector-->
+    <script type="text/javascript">
+        $(function () {
+            $('.carousel-itemA').eq(0).addClass('active');
+            var total = $('.carousel-itemA').length;
+            var current = 0;
+            $('#moveRightA').on('click', function () {
+                var next = current;
+                current = current + 1;
+                setSlide(next, current);
+            });
+            $('#moveLeftA').on('click', function () {
+                var prev = current;
+                current = current - 1;
+                setSlide(prev, current);
+            });
+            function setSlide(prev, next) {
+                var slide = current;
+                if (next > total - 1) {
+                    slide = 0;
+                    current = 0;
+                }
+                if (next < 0) {
+                    slide = total - 1;
+                    current = total - 1;
+                }
+                $('.carousel-itemA').eq(prev).removeClass('active');
+                $('.carousel-itemA').eq(slide).addClass('active');
+                setTimeout(function () {
+
+                }, 800);
+
+
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('.carousel-itemB').eq(0).addClass('active');
+            var total = $('.carousel-itemB').length;
+            var current = 0;
+            $('#moveRightB').on('click', function () {
+                var next = current;
+                current = current + 1;
+                setSlide(next, current);
+            });
+            $('#moveLeftB').on('click', function () {
+                var prev = current;
+                current = current - 1;
+                setSlide(prev, current);
+            });
+            function setSlide(prev, next) {
+                var slide = current;
+                if (next > total - 1) {
+                    slide = 0;
+                    current = 0;
+                }
+                if (next < 0) {
+                    slide = total - 1;
+                    current = total - 1;
+                }
+                $('.carousel-itemB').eq(prev).removeClass('active');
+                $('.carousel-itemB').eq(slide).addClass('active');
+                setTimeout(function () {
+
+                }, 800);
+
+
+            }
+        });
+    </script>
+    <!--End Sector Sector-->
+    <!--Terbitan Row-->
+
+    <script type="text/javascript">
+        $(function () {
+            $('.carousel-itemC').eq(0).addClass('active');
+            var total = $('.carousel-itemC').length;
+            var current = 0;
+            $('#moveRightC').on('click', function () {
+                var next = current;
+                current = current + 1;
+                setSlide(next, current);
+            });
+            $('#moveLeftC').on('click', function () {
+                var prev = current;
+                current = current - 1;
+                setSlide(prev, current);
+            });
+            function setSlide(prev, next) {
+                var slide = current;
+                if (next > total - 1) {
+                    slide = 0;
+                    current = 0;
+                }
+                if (next < 0) {
+                    slide = total - 1;
+                    current = total - 1;
+                }
+                $('.carousel-itemC').eq(prev).removeClass('active');
+                $('.carousel-itemC').eq(slide).addClass('active');
+                setTimeout(function () {
+
+                }, 800);
+
+
+            }
+        });
+    </script>
+
+    <script type="text/javascript">
+        $(function () {
+            $('.carousel-itemD').eq(0).addClass('active');
+            var total = $('.carousel-itemD').length;
+            var current = 0;
+            $('#moveRightD').on('click', function () {
+                var next = current;
+                current = current + 1;
+                setSlide(next, current);
+            });
+            $('#moveLeftD').on('click', function () {
+                var prev = current;
+                current = current - 1;
+                setSlide(prev, current);
+            });
+            function setSlide(prev, next) {
+                var slide = current;
+                if (next > total - 1) {
+                    slide = 0;
+                    current = 0;
+                }
+                if (next < 0) {
+                    slide = total - 1;
+                    current = total - 1;
+                }
+                $('.carousel-itemD').eq(prev).removeClass('active');
+                $('.carousel-itemD').eq(slide).addClass('active');
+                setTimeout(function () {
+
+                }, 800);
+
+
+            }
+        });
+    </script>
+
+    <!--End Terbitan Row-->
+    <!--Back to top of the page-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 20) {
+                    $('#toTopBtn').fadeIn();
+                } else {
+                    $('#toTopBtn').fadeOut();
+                }
+            });
+
+            $('#toTopBtn').click(function () {
+                $("html, body").animate({
+                    scrollTop: 0
+                }, 1000);
+                return false;
+            });
+        });
+    </script>
+    <!--End back to top of the page-->
+</head>
+<body>
+
+    <!--Back to top of the page button-->
+
+    <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
+
+
+    <!--End back to top of the page button-->
+
+    <nav>
+        <div class="navbar">
+            <i class='bx bx-menu'></i>
+            <div class="logo"><a href="#"><img alt="KKBS" src="Assets/Images/Logo/site_logo.png" width="400" /></a></div>
+            <div class="nav-links">
+                <div class="sidebar-logo">
+                    <span class="logo-name"><img alt="KKBS" src="Assets/Images/Logo/site_logo.png" width="350" /></span>
+                    <i class='bx bx-x'></i>
+                </div>
+                <ul class="links">
+                    <li>
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                                <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Mengenai Kementerian</a>
+                        <i class='bx bxs-chevron-down htmlcss-arrow arrow  '></i>
+                        <ul class="htmlCss-sub-menu sub-menu">
+                            <li><a href="#">Sejarah KKBS</a></li>
+                            <li><a href="#">Pucuk Kepimpinan KKBS</a></li>
+                            <li><a href="#">Visi dan Misi</a></li>
+                            <li class="more">
+                                <span>
+                                    <a href="#">Bahagian-Bahagian</a>
+                                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="#">Pentadbiran dan Kewangan</a></li>
+                                    <li><a href="#">Kebudayaan dan Kesenian</a></li>
+                                    <li><a href="#">Penyelidikan, Perkembangan dan Hal Ehwal Antarabangsa</a></li>
+                                    <li><a href="#">Perkhidmatan Sosial</a></li>
+                                    <li><a href="#">Pembangunan Belia dan Sukan</a></li>
+                                    <li><a href="#">Program Khidmat Bakti Negara</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="more">
+                                <span>
+                                    <a href="#">Jabatan-Jabatan</a>
+                                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="#">Pusat Sejarah Brunei</a></li>
+                                    <li><a href="#">Jabatan Belia dan Sukan</a></li>
+                                    <li><a href="#">Jabatan Muzium-Muzium</a></li>
+                                    <li><a href="#">Jabatan Pembangunan Masyarakat</a></li>
+                                    <li><a href="#">Dewan Bahasa dan Pustaka</a></li>
+                                </ul>
+                            </li>
+                            <li class="more">
+                                <span>
+                                    <a href="#">Unit-Unit Lain</a>
+                                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="#">Unit Strategi dan Dasar</a></li>
+                                    <li><a href="#">Unit Audit Dalaman</a></li>
+                                    <li><a href="#">Unit Perhubungan Awam</a></li>
+                                    <li><a href="#">Unit Teknologi Maklumat</a></li>
+                                </ul>
+                            </li>
+                            <li class="more">
+                                <span>
+                                    <a href="#">Pusat-Pusat</a>
+                                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="#">Pusat Pembangunan Belia</a></li>
+                                    <li><a href="#">Pusat Belia Daerah Brunei dan Muara</a></li>
+                                    <li><a href="#">Pusat Belia Daerah Belait</a></li>
+                                    <li><a href="#">Pusat Belia Daerah Tutong</a></li>
+                                    <li><a href="#">Pusat Belia Temburong</a></li>
+                                    <li><a href="#">Pusat Penyelidikan dan Perubatan (SMRC)</a></li>
+                                    <li><a href="#">Pusat Bahagia Brunei dan Muara</a></li>
+                                    <li><a href="#">Pusat Bahagia Eric Goh Belait</a></li>
+                                    <li><a href="#">Pusat Bahagia Tutong</a></li>
+                                    <li><a href="#">Pusat Bahagia Temburong</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Carta Organisasi</a></li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Hari Kebangsaan</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="#">Titah KDYMM</a></li>
+                            <li><a href="#">Tema hari Kebangsaan</a></li>
+                            <li><a href="#">Logo Hari Kebangsaan</a></li>
+                            <li class="more">
+                                <span>
+                                    <a href="#">Jawatankuasa</a>
+                                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="#">Jawatankuasa Tertinggi</a></li>
+                                    <li><a href="#">Jawatan Kuasa Kerja</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Dasar - Dasar</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="#">Dasar Belia Negara</a></li>
+                            <li><a href="#">Dasar Kebudayaan Negara</a></li>
+                            <li><a href="#">Dasar Sukan Negara</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Perkhidmatan</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li class="more">
+                                <span>
+                                    <a href="#">Peminjaman</a>
+                                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="#">Pakaian Tradisi</a></li>
+                                    <li><a href="#">Peralatan Muzik</a></li>
+                                </ul>
+                            </li>
+                            <li class="more">
+                                <span>
+                                    <a href="#">Tenaga Pengajar</a>
+                                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="#">Muzik Tradisi</a></li>
+                                    <li><a href="#">Seni Tarian</a></li>
+                                </ul>
+                            </li>
+                            <li class="more">
+                                <span>
+                                    <a href="#">Muat Turun</a>
+                                    <i class='bx bxs-chevron-right arrow more-arrow'></i>
+                                </span>
+                                <ul class="more-sub-menu sub-menu">
+                                    <li><a href="#">Borang-Borang</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Sebutharga</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Hubungi Kami</a>
+                        <i class='bx bxs-chevron-down js-arrow arrow '></i>
+                        <ul class="js-sub-menu sub-menu">
+                            <li><a href="#">Alamat</a></li>
+                            <li><a href="#">Direktori</a></li>
+                            <li><a href="#">Maklum Balas</a></li>
+                            <li><a href="#">Soalan Lazim</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <a href="#">
+                    <img alt="gov.bn" src="Assets/Images/govbn-logo.png" />
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <script src="Assets/ResponsiveNavAssests/script.js"></script>
+
+    <!--Image slider-->
+
+
+    <div id="demo1" style="height:400px;padding-bottom:10px;">
+        <div class="slide">
+            <img src="Assets/Images/SliderImages/Slides/1.jpg" />
+            <!--Slider Description example-->
+            <div class="slide-desc">
+                <h2>Slider Title 1</h2>
+                <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="Assets/Images/SliderImages/Slides/2.jpg" />
+            <div class="slide-desc">
+                <h2>Slider Title 2</h2>
+                <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="Assets/Images/SliderImages/Slides/3.jpeg" />
+            <!--NO Description Here-->
+        </div>
+        <div class="slide">
+            <img src="Assets/Images/SliderImages/Slides/4.jpg" />
+            <div class="slide-desc">
+                <h2>Slider Title 4</h2>
+                <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="Assets/Images/SliderImages/Slides/5.jpg" />
+        </div>
+        <div class="slide">
+            <img src="Assets/Images/SliderImages/Slides/6.jpg" />
+            <div class="slide-desc">
+                <h2>Slider Title 6</h2>
+                <p>Demo description here. Demo description here. Demo description here. Demo description here. Demo description here. <a class="more" href="#">more</a></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--End-->
+    <script src="app.js"></script>
+
+    <!--Quick Links-->
+
+    <section class="columns">
+        <div class="quickLinksBox">
+            <div>
+                <img src="brunei.png" width="40" height="40" />
+            </div>
+            <div>
+                <span style="font-size:9px;color:maroon;"> Hari Kebangsaan</span>
+            </div>
+        </div>
+        <div class="quickLinksBox">
+            <div>
+                <img src="weight.png" width="40" height="40" />
+            </div>
+            <div>
+                <span style="font-size: 9px; color: #26A5DB;"> Akta</span>
+            </div>
+        </div>
+        <div class="quickLinksBox"></div>
+        <div class="quickLinksBox"></div>
+        <div class="quickLinksBox"></div>
+        <div class="quickLinksBox"></div>
+        <div class="quickLinksBox"></div>
+        <div class="quickLinksBox"></div>
+        <div class="quickLinksBox"></div>
+    </section>
+
+    <!--End Quick Links-->
+    <!--Berita-->
+
+
+    <br />
+    <!--<div class="beritaRowWrapper">-->
+
+    <section class="columns">
+
+        <div class="column">
+            <div class="panel panel-default" style="margin:5%;">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-list-alt"></span><b>Berita</b>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul id="news-demo-manual">
+                                <li class="news-item"><a href="#" style="color:black;">Aspirasi belia Tonggak Kemajuan Negara..</a></li>
+                                <li class="news-item"><a href="#" style="color:black;">KKBS tumpuan Keberangkataan Tidak.... <br />Compare with Bootstrap 3</a></li>
+                                <li class="news-item"><a href="#" style="color:black;">Majlis Kesyukuran Sempena Hari..</a></li>
+                                <li class="news-item"><a href="#" style="color:black;">PKBN Mampu Corak Belia Modal..</a></li>
+                                <li class="news-item"><a href="#" style="color:black;">This is sample news..</a></li>
+                                <li class="news-item"><a href="#" style="color:black;">A dummy news to read... </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+
+                </div>
+            </div>
+        </div>
+        <div class="column">
+
+            <div class="panel panel-default" style="margin:5%;">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-list-alt"></span><b>Aplikasi</b>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul id="aplikasi-demo-manual">
+                                <li class="news-item"><a href="#" style="color:black;">A sample aktiviti to click..</a></li>
+                                <li class="news-item"><a href="#" style="color:black;">Dummy aktiviti..</a></li>
+                                <li class="news-item"><a href="#" style="color:black;">A new event has been created.</a></li>
+                                <li class="news-item"><a href="#" style="color:black;">For more info click this new event</a></li>
+                                <li class="news-item"><a href="#" style="color:black;">Read about KKBS events here </a></li>
+                                <li class="news-item"><a href="#" style="color:black;">All the events are listed in aktiviti section..</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+
+                </div>
+            </div>
+        </div>
+        <div class="column">
+
+            <div class="panel panel-default" style="margin:5%;">
+                <div class="panel-heading">
+                    <span class="glyphicon glyphicon-list-alt"></span><b>Hubingi Kami</b>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul id="news-demo-manual">
+                                <li class="news-item">
+                                    <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"></path>
+                                    </svg>-->
+                                    <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+
+
+                                    <a href="#" style="color: black; padding-left: 10px;">Alamat</a>
+                                </li>
+                                <li class="news-item">
+                                    <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"></path>
+                                    </svg>-->
+                                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+
+                                    <a href="#" style="color: black; padding-left: 10px;">Direktori</a>
+                                </li>
+                                <li class="news-item">
+                                    <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"></path>
+                                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"></path>
+                                    </svg>-->
+                                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+
+                                    <a href="#" style="color: black; padding-left: 10px;">Waktu operasi dan kounter</a>
+                                </li>
+                                <li class="news-item">
+                                    <!--<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16">
+                                        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"></path>
+                                        <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"></path>
+                                    </svg>-->
+                                    <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+
+                                    <a href="#" style="color:black;padding-left:10px;">Maklum balas dan aduan</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script type="text/javascript">
+        $(function () {
+            $("#news-demo-manual").bootstrapNews({
+                newsPerPage: 3,
+                autoplay: true,
+
+                onToDo: function () {
+                }
+            });
+
+            $("#aplikasi-demo-manual").bootstrapNews({
+                newsPerPage: 3,
+                autoplay: true,
+
+                onToDo: function () {
+                }
+            });
+
+        });
+    </script>
+
+
+
+
+    <!--End Berita-->
+    <!--Sector Sector Row-->
+    <section class="columns">
+
+        <div class="column">
+            <div class="panel-heading" style="margin:5%;">
+                <span class="glyphicon glyphicon-list-alt"></span><b>SEKTOR-SEKTOR</b>
+            </div>
+            <div class="carousel">
+                <div class="carousel__nav">
+                    <span id="moveLeftA" class="carousel__arrow">
+                        <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                        </svg>
+                    </span>
+                    <span id="moveRightA" class="carousel__arrow">
+                        <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                        </svg>
+                    </span>
+                </div>
+                <div class="carousel-itemA carousel-item--1">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">Kebudayaan</h2>
+                            <!--<h1 class="carousel-item__title">Le tour</h1>-->
+                            <p class="carousel-item__description">
+                                Perkhidmatan-perkhidmatan:<br />
+
+                                Khidmat Seni
+                                <br />
+                                Program Seni dan Budaya
+                                <br />
+                                Bantuan
+
+                            </p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Sector2.jpeg');">
+                        <!--<img src="Fifty fifty Slider/Beach.jpeg" width="300" height="250" />-->
+                    </div>
+                </div>
+                <div class="carousel-itemA carousel-item--2">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">The big window </h2>
+                            <!--<h1 class="carousel-item__title">Minimal window</h1>-->
+                            <p class="carousel-item__description">Clear Glass Window With Brown and White Wooden Frame iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Beach.jpeg');">
+                        <!--<img src="Fifty fifty Slider/Beach.jpeg" width="300" height="250" />-->
+                    </div>
+                </div>
+                <div class="carousel-itemA carousel-item--3">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">Tropical palms </h2>
+                            <!--<h1 class="carousel-item__title">Palms</h1>-->
+                            <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Sector4.jpeg');">
+                        <!--<img src="Fifty fifty Slider/Beach.jpeg" width="300" height="250" />-->
+                    </div>
+                </div>
+
+                <div class="carousel-itemA carousel-item--4">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">Beach </h2>
+                            <!--<h1 class="carousel-item__title">The beach </h1>-->
+                            <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Sector3.jpeg');">
+                        <!--<img src="Fifty fifty Slider/Beach.jpeg" width="300" height="250" />-->
+                    </div>
+                </div>
+
+                <div class="carousel-itemA carousel-item--5">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">The white building </h2>
+                            <!--h1 class="carousel-item__title">White building</h1>-->
+                            <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Sector5.jpeg');">
+                        <!--<img src="Fifty fifty Slider/Beach.jpeg" width="300" height="250" />-->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="panel-heading" style="margin:5%;">
+                <span class="glyphicon glyphicon-list-alt"></span><b>PERKHIDMATAN-PERKHIDMATAN</b>
+            </div>
+            <div class="carousel">
+                <div class="carousel__nav">
+                    <span id="moveLeftB" class="carousel__arrow">
+                        <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                        </svg>
+                    </span>
+                    <span id="moveRightB" class="carousel__arrow">
+                        <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                        </svg>
+                    </span>
+                </div>
+                <div class="carousel-itemB carousel-item--1">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">Pendaftaran Anak Yatim</h2>
+
+                            <p class="carousel-item__description">Daftar di sini</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Sector4.jpeg');">
+
+                    </div>
+                </div>
+                <div class="carousel-itemB carousel-item--2">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">The big window </h2>
+                            <p class="carousel-item__description">Clear Glass Window With Brown and White Wooden Frame iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Sector3.jpeg');">
+
+                    </div>
+                </div>
+                <div class="carousel-itemB carousel-item--3">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">Tropical palms </h2>
+                            <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Sector2.jpeg');">
+
+                    </div>
+                </div>
+
+                <div class="carousel-itemB carousel-item--4">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">Beach </h2>
+                            <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Sector5.jpeg');">
+
+                    </div>
+                </div>
+
+                <div class="carousel-itemB carousel-item--5">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">The white building </h2>
+                            <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Beach.jpeg');">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!--End Sector Sector Row-->
+    <!--Terbitan Row-->
+
+    <section class="columns">
+
+        <div class="column">
+            <div class="panel-heading" style="margin:5%;">
+                <span class="glyphicon glyphicon-list-alt"></span><b>TERBITAN</b>
+            </div>
+            <div class="carousel">
+                <div class="carousel__nav">
+                    <span id="moveLeftC" class="carousel__arrow">
+                        <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                        </svg>
+                    </span>
+                    <span id="moveRightC" class="carousel__arrow">
+                        <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                        </svg>
+                    </span>
+                </div>
+                <div class="carousel-itemC carousel-item--1">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">The grand moment </h2>
+
+                            <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Sector3.jpeg');">
+
+                    </div>
+                </div>
+                <div class="carousel-itemC carousel-item--2">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">The big window </h2>
+                            <p class="carousel-item__description">Clear Glass Window With Brown and White Wooden Frame iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Sector4.jpeg');">
+
+                    </div>
+                </div>
+                <div class="carousel-itemC carousel-item--3">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">Tropical palms </h2>
+                            <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Sector2.jpeg');">
+
+                    </div>
+                </div>
+
+                <div class="carousel-itemC carousel-item--4">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">Beach </h2>
+                            <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Beach.jpeg');">
+
+                    </div>
+                </div>
+
+                <div class="carousel-itemC carousel-item--5">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">The white building </h2>
+                            <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Sector5.jpeg');">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="panel-heading" style="margin:5%;">
+                <span class="glyphicon glyphicon-list-alt"></span><b>ACARA-ACARA KEBANGSAAN</b>
+            </div>
+            <div class="carousel">
+                <div class="carousel__nav">
+                    <span id="moveLeftD" class="carousel__arrow">
+                        <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                        </svg>
+                    </span>
+                    <span id="moveRightD" class="carousel__arrow">
+                        <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+                            <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                        </svg>
+                    </span>
+                </div>
+                <div class="carousel-itemD carousel-item--1">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">The grand moment </h2>
+
+                            <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Beach.jpeg');">
+
+                    </div>
+                </div>
+                <div class="carousel-itemD carousel-item--2">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">The big window </h2>
+                            <p class="carousel-item__description">Clear Glass Window With Brown and White Wooden Frame iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Sector2.jpeg');">
+
+                    </div>
+                </div>
+                <div class="carousel-itemD carousel-item--3">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">Tropical palms </h2>
+                            <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Sector3.jpeg');">
+
+                    </div>
+                </div>
+
+                <div class="carousel-itemD carousel-item--4">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">Beach </h2>
+                            <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Sector4.jpeg');">
+
+                    </div>
+                </div>
+
+                <div class="carousel-itemD carousel-item--5">
+                    <div class="carousel-item__info">
+                        <div class="carousel-item__container">
+                            <h2 class="carousel-item__subtitle">The white building </h2>
+                            <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                            <a href="#" class="carousel-item__btn">Maklumat Lanjut</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item__image" style="background-image: url('Fifty fifty Slider/Sector5.jpeg');">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--End Terbitan Row-->
+    <!--Pautan Serega-->
+
+    <div class="row">
+
+        <ul id="rcbrand2">
+            <li><img src="Assets/PautanSerega/Images/wordpress.png" /></li>
+            <li><img src="Assets/PautanSerega/images/html5.png" /></li>
+            <li><img src="Assets/PautanSerega/images/css3.png" /></li>
+            <li><img src="Assets/PautanSerega/images/windows.png" /></li>
+            <li><img src="Assets/PautanSerega/images/jquery.png" /></li>
+            <li><img src="Assets/PautanSerega/images/js.png" /></li>
+        </ul>
+
+    </div>
+
+    <script type="text/javascript">
+
+        $(window).load(function () {
+
+
+
+            $("#rcbrand2").rcbrand({
+                visibleItems: 3,
+                itemsToScroll: 1,
+                autoPlay: {
+                    enable: true,
+                    interval: 3000,
+                    pauseOnHover: true
+                },
+                responsiveBreakpoints: {
+                    portrait: {
+                        changePoint: 480,
+                        visibleItems: 1,
+                        itemsToScroll: 1
+                    },
+                    landscape: {
+                        changePoint: 640,
+                        visibleItems: 2,
+                        itemsToScroll: 2
+                    },
+                    tablet: {
+                        changePoint: 768,
+                        visibleItems: 3,
+                        itemsToScroll: 3
+                    }
+                }
+            });
+
+
+
+        });
+    </script>
+
+    <!--End Pautan Serega-->
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <span class="dot"></span>&nbsp;<span class="dot"></span>&nbsp;<span class="dot"></span>&nbsp; Media Sosial<span></span>
+                        </h6>
+
+                        <a href="#"> <i class="fa fa-facebook-square" style="color: #3b5998;font-size:20px;padding:5px;"> </i> </a>
+                        <a href="#"> <i class="fa fa-instagram" style="color: red; font-size: 20px; padding: 5px; "> </i> </a>
+                        <a href="#"> <i class="fa fa-youtube-play" style="color: red; font-size: 20px; padding: 5px; "> </i> </a>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-3 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <span class="dot"></span>&nbsp;<span class="dot"></span>&nbsp;<span class="dot"></span>&nbsp;Muat turun aplikasi<span></span>
+
+                        </h6>
+                        <ul>
+                            <li>
+                                Mengalinga
+                            </li>
+                            <li>
+                                Galeri Seni
+                            </li>
+                            <li>
+                                Royal Regalia (Virtual)
+                            </li>
+                        </ul>
+
+
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <span class="dot"></span>&nbsp;<span class="dot"></span>&nbsp;<span class="dot"></span>&nbsp;Nombor penting<span></span>
+
+                        </h6>
+                        <ul style="columns:2;text-align:left;">
+                            <li>
+                                <b>991</b> Ambulans
+                            </li>
+                            <li>
+                                <b>993</b> Polis
+                            </li>
+                            <li>
+                                <b>995</b> Bomba
+                            </li>
+                            <li>
+                                <b>998</b> Penyelamat
+                            </li>
+                            <li>
+                                <b>141</b> Talian Kebajikan
+                            </li>
+                            <li>
+                                <b>121</b> Talian Anak
+                            </li>
+                            <li>
+                                <b>145</b> Talian Harapan
+                            </li>
+                            <li>
+                                <b>123</b> Talian Darussalam
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <span class="dot"></span>&nbsp;<span class="dot"></span>&nbsp;<span class="dot"></span>&nbsp;Pelawat laman sesawang<span></span>
+
+                        </h6>
+
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+        <div class="copyright">
+            Copyright © 2022 Kementerian Kebudayaan, Belia dan Sukan. Hak Cipta Terpelihara.
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <!--End Footer-->
+</body>
+</html>
